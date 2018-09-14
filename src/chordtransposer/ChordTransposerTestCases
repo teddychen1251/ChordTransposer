@@ -1,0 +1,20 @@
+Test Cases for Code Transposer:
+ 
+ Original | Transpo | Expected | Received | Passed?
+    A     |    +1   | A#       | A#
+    Am    |    +2   | Bm       | Bm
+    A7    |    -3   | Gb7      | Gb7
+ 	A#    |    -7   | Eb       | Eb
+ 	B     |    +3   | D        | D
+ 	Bbm7  |    -4   | Gbm7     | Gbm7
+    Gsus4 |    +12  | Gsus4    | Gsus4
+   E minor|    -11  | F minor  | F minor
+ 	Fadd9 |    +5   | A#add9   | A#add9		ALL PASSED
+ 	Dbdim |    2    | D#dim    | D#dim
+ 	C6    |    -6   | Gb6      | Gb6
+ 	C#m   |    -2   | Bm       | Bm
+ D Major  |    +34  | C Major  | C Major
+ 	Gb    |    +13  | G        | G 
+ 	Eaug  |    0    | Eaug     | Eaug
+ 	Fbsu  |    -13  | Try again|Try again
+ 	Hb    |    +7   | Try again|Try again
